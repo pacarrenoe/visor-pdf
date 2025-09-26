@@ -155,3 +155,18 @@ main {
         flex-direction: column;
     }
 }
+
+.b64-converter {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.b64-converter textarea {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: monospace;
+}
+
