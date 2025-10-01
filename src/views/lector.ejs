@@ -1,0 +1,36 @@
+<div class="page-header">
+    <h2>Lector de PDFs en Base64</h2>
+</div>
+
+<div class="page-content lector-container">
+    <!-- Controles -->
+    <div class="controls-card">
+        <h3>Ingresar Base64 del PDF</h3>
+        <textarea id="b64input" placeholder="Pega aquí el Base64 de tu PDF..."></textarea>
+        <div class="button-group">
+            <button class="btn-primary" id="btnVisualizar">Visualizar</button>
+            <button class="btn-primary" id="btnDescargar" disabled>Descargar</button>
+            <button class="btn-primary" id="btnComparar" disabled>Comparar con anterior</button>
+        </div>
+    </div>
+
+    <!-- Vista previa (oculta por defecto) -->
+    <div class="viewer-card hidden" id="viewer">
+        <h3>Vista previa</h3>
+        <iframe id="visor"></iframe>
+    </div>
+
+    <!-- Comparación (oculta por defecto) -->
+    <div class="comparison-card hidden" id="comparison">
+        <div class="comparison-header">
+            <h3>Comparación de PDFs</h3>
+            <button id="btnCerrarComparacion" class="btn-close">✖</button>
+        </div>
+        <div class="comparison-view">
+            <iframe id="visorAnterior"></iframe>
+            <iframe id="visorActual"></iframe>
+        </div>
+    </div>
+</div>
+
+<script src="/js/lector.js"></script>
